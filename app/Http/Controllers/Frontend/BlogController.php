@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Http\Controllers\Frontend;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class BlogController extends Controller
+{
+
+    public function index()
+    {
+        return view('frontend.default.blog.index');
+    }
+
+    public function showBlog()
+    {
+        return view('frontend.default.blog.view');
+    }
+
+}
